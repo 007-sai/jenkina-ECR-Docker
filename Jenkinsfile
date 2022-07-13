@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') { 
             steps { 
                 script{ 
-                        docker.withRegistry('https://632057435782.dkr.ecr.us-east-1.amazonaws.com', 'ecr:us-east-1:ecrtocken') { 
+                        docker.withRegistry('https://632057435782.dkr.ecr.us-east-1.amazonaws.com', 'ecr:us-east-1:ecrtoken') { 
                     app.push() 
                     } 
                 } 
